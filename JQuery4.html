@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Inner HTML</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<p>Hello World</p>
+<h1></h1>
+
+<script>
+$(document).ready(function(){
+	var a=$("p").text();
+    $("h1").html(a);
+    $("h1").hover(function(){
+    	$("h1").css({"color":"#2a9146" , "font-family":"cursive", "font-style": "italic"});
+    });
+     $("h1").mouseover(function(){
+    	$("h1").css({"color":"red" , "font-size":"50px"});
+    });
+      $("h1").mouseleave(function(){
+    	$("h1").css({"color":"blue" , "font-size":"100px"});
+    });
+});
+</script>
+</body>
+</html>
